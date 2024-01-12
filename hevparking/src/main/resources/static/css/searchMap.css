@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.map_wrap,
+.map_wrap * {
+	margin: 0;
+	padding: 0;
+	font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+
+}
+#shadowbox{
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	transform: translate(-50%);
+	min-width: 82%;
+	height: 48em;
+	padding: 30px;
+	text-align: center;
+	background: #fff;
+	opacity: 1;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	z-index: 0;
+}
+
+#sideGroup{
+	font-size: 12px;
+}
+
+#filterbtnGroup{
+	display: flex;
+	font-size: 13px;
+}
+#filterbtnGroup > label{
+	font-size: 13px;
+}
+
+#chargerList {
+    max-height: 460px; /* 원하는 높이로 조절하세요. */
+    overflow-y: auto; /* 수직 스크롤 활성화 */
+    border: 1px solid #ccc; /* 스크롤 가능한 영역 테두리 스타일 설정 */
+    padding: 5px; /* 원하는 여백 설정 */
+}
+
+
+#mapbg {
+	position: fixed;
+	/* 배경이미지*/
+	width: 100%;
+	height: 80em;
+	z-index: -1;
+}
+
+#map {
+	position: absolute;
+	top: 17%;
+	width: 60%;
+	margin-left: 10%;
+	height: 46em;
+	overflow: hidden;
+}
+
+#menu_wrap {
+	position: absolute;
+	top: 16%;
+	left: 70%;
+	bottom: 0;
+	width: 370px;
+	height: 91em;
+	margin: 10px 0 30px 10px;
+	padding: 5px;
+	overflow-y: auto;
+	background: white;
+	font-size: 8px;
+	border-radius: 10px;
+}
+
+.infowindow {
+
+	width: 380px;
+	height: 300px;
+	text-align: center;
+	background-color: aliceblue;
+	border: 1px solid #000000;
+	border-radius: 8px;
+	padding: 8px;
+	margin-bottom: 5px;
+	font-size: 13px;
+
+}
+
+#mapTable {
+
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	width: 100%;
+	height: 70em;
+	transform: translate(-50%, 0%);
+	min-width: 300px;
+	font-size: 12px;
+	background: #fff;
+	opacity: 1;
+
+}
+
+
+.chargeinfotable {
+	font-size: 12px;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	border-radius: 3px;
+	border-collapse: collapse;
+	
+}
+
+#chargeInfobox {
+	font-size: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-color: aliceblue;
+	border: 1px solid rgb(0, 0, 255);
+	border-radius: 8px;
+	width: 230px;
+}
+
+.chargeInfo {
+	display: flex;
+	padding: 3%;
+	text-align: center;
+}
+
+.price {
+	font-size: 10px;
+	text-align: center;
+	color: black;
+	border-radius: 5px;
+	background-color: cornflowerblue;
+	z-index: 2;
+}
+
+.customOverlay {
+	font-size: 10px;
+	text-align: center;
+	z-index: 2;
+	color: rgb(0, 0, 0);
+	border-radius: 20px;
+	background-color: rgb(199, 250, 248);
+
+}

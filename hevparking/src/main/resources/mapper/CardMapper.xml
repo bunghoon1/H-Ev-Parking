@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.CardMapper">
+	
+	<!-- 카드 등록 -->
+	<insert id="cardRegistration" parameterType="com.example.demo.vo.CardVO">
+		INSERT INTO CARD(CARD_CODE,CARD_PASS,MEM_CODE,CARD_NAME,CARD_NUM,CARD_DATE,CARD_CVC)
+		VALUES (#{cardCode},#{cardPass}, #{memCode}, #{cardName}, #{cardNum}, #{cardDate}, #{cvc});
+	</insert>
+	
+	<!-- 등록된 카드 삭제 -->
+	<delete id="cardDelete" parameterType="com.example.demo.vo.CardVO">
+		DELETE FROM CARD WHERE CARD_CODE = #{cardCode} AND MEM_CODE= #{memCode} 
+	</delete>
+	
+	<!-- 카드 정보 조회 -->
+	<select id="getcardInfo" resultType="com.example.demo.vo.CardVO">
+        SELECT CARD_CODE,MEM_CODE,CARD_NAME,CARD_NUM,CARD_CVC,CARD_DATE,CARD_PASS FROM CARD;
+    </select>
+	
+	<!-- 예약된 카드 정보 삭제 -->
+	<delete id="resCarddelete" parameterType="com.example.demo.vo.CardVO">
+		DELETE FROM CARD WHERE MEM_CODE = #{memCode}
+	</delete>
+	
+	<!-- resultMap 설정 -->
+	<resultMap id="CardResultMap" type="com.example.demo.vo.CardVO">
+		<id property="cardCode" column="CARD_CODE" />
+		<result property="memCode" column="MEM_CODE" />
+		<result property="cardPass" column="CARD_PASS" />
+		<result property="cardName" column="CARD_NAME" />
+		<result property="cardNum" column="CARD_NUM" />
+		<result property="cvc" column="CARD_CVC" />
+		<result property="cardDate" column="CARD_DATE" />
+				
+		<!-- CardpaymentVO와의 연관 관계 설정 -->
+		<association property="cardpaymentVO" javaType="com.example.demo.vo.CardpaymentVO">
+			<id property="paymentCode" column="PAYMENT_CODE" />
+			<result property="prsCode" column="PRS_CODE" />
+			<result property="cardCode" column="CARD_CODE" />
+		</association>
+	</resultMap>
+
+	<!-- 마이페이지 주차예약,카드결제,계좌이체 정보 조회 -->
+	<select id="CardAndCardPayment" resultMap="CardResultMap">
+		SELECT
+		C.CARD_CODE,C.MEM_CODE,C.CARD_NAME,C.CARD_NUM,C.CARD_CVC,C.CARD_DATE,
+		P.PAYMENT_CODE,P.PRS_CODE,P.CARD_CODE
+		FROM CARD C LEFT JOIN CARD_PAYMENT P ON C.CARD_CODE = P.CARD_CODE;
+	</select>
+	
+</mapper>

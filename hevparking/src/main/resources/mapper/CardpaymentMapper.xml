@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.CardpaymentMapper">
+	
+	<!-- 예약 결제된 카드정보 조회 -->
+	<select id="cardpaymentInfo" resultType="com.example.demo.vo.CardpaymentVO">
+        SELECT PAYMENT_CODE,PRS_CODE,CARD_CODE FROM CARD_PAYMENT;
+    </select>
+	
+	<!-- 예약 카드결제 등록 -->
+	<insert id="paymentinsert" parameterType="com.example.demo.vo.CardpaymentVO">
+		INSERT INTO CARD_PAYMENT(PRS_CODE ,CARD_CODE)
+		VALUES (#{prsCode},#{cardCode});
+	</insert>
+	
+	<!-- 예약된 카드결제 삭제 -->
+	<delete id="paymentdelete" parameterType="com.example.demo.vo.CardpaymentVO">
+		DELETE FROM CARD_PAYMENT WHERE PRS_CODE = #{prsCode}
+	</delete>
+	
+</mapper>

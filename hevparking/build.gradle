@@ -1,0 +1,51 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.17'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '11'
+}
+
+repositories {
+	mavenCentral()
+	
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	
+	//자동 새로고침
+	implementation 'org.springframework.boot:spring-boot-devtools'
+	
+	//lombok
+	compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+	
+	// mariaDB
+	implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.0'
+	
+	// MyBatis
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+	
+	//JSP
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+  	
+  	//JSTL
+  	implementation 'javax.servlet:jstl'
+  	
+  	//Transactional
+  	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'
+  	
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.ChargeMapper">
+	
+	<!-- 실시간 충전기 정보 -->
+	<select id="chargeinfo" resultType="com.example.demo.vo.ChargeVO" parameterType="java.lang.String">
+		SELECT CHARGE_CODE,CHARGE_LOC, CHARGE_NAME, CHARGE_STATE, CHARGE_SPEED,CHARGE_TYPE, TIME_PRICE, CHARGE_USETIME
+    	FROM CHARGE WHERE CHARGE_LOC = #{chargeLoc}
+	</select>
+	
+	<select id="chargestate" resultType="String">
+		SELECT CHARGE_LOC FROM
+		CHARGE WHERE CHARGE_LOC = #{chargeLoc} AND CHARGE_STATE = '사용불가능'
+	</select>
+	
+	<!-- resultMap 설정 -->
+	<resultMap id="chargeResultMap" type="com.example.demo.vo.ChargeVO">
+		<id property="chargeCode" column="CHARGE_CODE" />
+		<result property="chargeLoc" column="CHARGE_LOC" />
+		<result property="chargeName" column="CHARGE_NAME" />
+		<result property="chargeState" column="CHARGE_STATE" />
+		<result property="chargeSpeed" column="CHARGE_SPEED" />
+		<result property="chargeType" column="CHARGE_TYPE" />
+		<result property="timePrice" column="TIME_PRICE" />
+		<result property="chargeUsetime" column="CHARGE_USETIME" />
+		
+		<!-- ChargeResVO와의 연관 관계 설정 -->
+		<association property="chargeResVO" javaType="com.example.demo.vo.ChargeResVO">
+			<id property="chargeResCode" column="CHARGE_RES_CODE" />
+			<result property="prsCode" column="PRS_CODE" />
+			<result property="chargeCode" column="CHARGE_CODE" />
+			<result property="chargeTime" column="CHARGE_TIME" />
+			<result property="chargePrice" column="CHARGE_PRICE" />
+		</association>
+		
+
+	</resultMap>
+	
+	
+</mapper>

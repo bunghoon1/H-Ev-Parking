@@ -1,0 +1,340 @@
+#bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/* 로 고 */
+#startlogo {
+	position: absolute;
+	display: flex;
+	text-decoration: none;
+	left: 38%;
+	top: 12%;
+	font-size: 60px;
+	transform: rotate(4.7deg);
+	text-shadow: 0 -20px 100px, 0 0 2px, 0 0 1em rgb(111, 213, 210), 0 0 0.5em rgb(111, 213, 210), 0 0 0.1em rgb(14, 165, 237), 0 5px 8px #000;
+	z-index: 1;
+}
+
+#startlogo:hover {
+	color: rgb(0, 128, 128);
+	filter: brightness(1.3);
+	filter: drop-shadow(5px 3px 3px rgb(0, 255, 255));
+}
+
+/* 로그인 정보 (건물 지붕) */
+.logingroup {
+	position: absolute;
+	display: flex;
+	left: 62%;
+	top: 19.0%;
+	font-size: 20px;
+	transform: rotate(5.5deg);
+	z-index: 1;
+}
+
+.logingroup>a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	filter: brightness(1.0);
+	text-shadow: 0 -20px 100px, 0 0 2px, 0 0 1em rgb(111, 213, 210), 0 0 0.5em rgb(111, 213, 210), 0 0 0.1em rgb(14, 165, 237), 0 5px 8px #000;
+	margin: 20px;
+	text-decoration: none;
+}
+
+
+
+#memberInfoText:hover,
+#gosignup:hover,
+#memberInfoText:hover,
+#gosignup:hover,
+#myInfo:hover,
+#logout:hover {
+	color: rgb(255, 255, 255);
+	filter: brightness(1.7);
+	filter: drop-shadow(3px 3px 7px rgb(0, 255, 255));
+	
+}
+
+
+/* 주차 예약(충전기 이미지) */
+#goparkingres>#mainbg_charge {
+	position: fixed;
+	left: 8.4%;
+	top: 40%;
+	width: 21%;
+	height: 357px;
+	transform: scale(1);
+	filter: brightness(0.3);
+	opacity: 0.2;
+	z-index: 1;
+}
+
+#goparkingres>#mainbg_charge:hover {
+
+	opacity: 0.8;
+	filter: brightness(1.3);
+	animation: animate 4s linear infinite;
+	filter: drop-shadow(10px 10px 10px rgb(255, 155, 106));
+
+}
+
+#parkingresText {
+	position: fixed;
+	display: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+	left: 15.5%;
+	top: 38%;
+	font-weight: 1200px;
+	background: linear-gradient(90deg, rgb(251, 81, 9), #fff, rgb(251, 81, 9));
+	background-size: 80%;
+	filter: drop-shadow(3px 1px 1px rgb(0, 0, 0));
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	opacity: 0.6;
+	z-index: 2;
+}
+
+/* 공지 사항(화이트보드 이미지) */
+#gonoticeBoard>#mainbg_noticeboard {
+	position: fixed;
+	display: flex;
+	left: 71.7%;
+	top: 55%;
+	width: 14.4%;
+	height: 155px;
+	opacity: 0.2;
+	filter: brightness(0.9);
+	z-index: 1;
+}
+
+#gonoticeBoard>#mainbg_noticeboard:hover {
+	filter: brightness(1.9);
+	opacity: 0.8;
+	filter: drop-shadow(10px 10px 10px rgb(255, 255, 128));
+
+}
+
+#noticeBoardText {
+	position: fixed;
+	display: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	left: 75%;
+	top: 52%;
+	font-weight: 1200px;
+	background: linear-gradient(90deg, rgb(255, 255, 128), #fff, rgb(255, 255, 128));
+	background-size: 80%;
+	filter: drop-shadow(3px 1px 1px rgb(0, 0, 0));
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	opacity: 0.6;
+	z-index: 2;
+}
+
+/* 충전소 검색(바닥 이미지) */
+#gosearchMap>#mainbg_searchmap {
+	position: fixed;
+	top: 76%;
+	width: 100%;
+	transform: scale(1);
+	height: 225px;
+	filter: brightness(0.4);
+	opacity: 0.2;
+	z-index: 1;
+}
+
+#searchMapText {
+	position: fixed;
+	display: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+	left: 45%;
+	top: 90%;
+	background: linear-gradient(90deg, rgb(0, 255, 64), #fff, rgb(0, 255, 64));
+	background-size: 80%;
+	filter: drop-shadow(3px 1px 1px rgb(0, 0, 0));
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	opacity: 0.6;
+	z-index: 2;
+}
+
+#gosearchMap>#mainbg_searchmap:hover {
+	filter: brightness(1.25);
+	opacity: 0.8;
+	color: rgb(128, 255, 255);
+	filter: drop-shadow(55px 15px 25px rgb(0, 255, 128));
+
+}
+
+/* 내정보 (자동차 이미지)*/
+#goparkinglist>#mainbg_car {
+	position: fixed;
+	left: 32.3%;
+	top: 53.3%;
+	width: 41.5%;
+	height: 239px;
+	opacity: 0.2;
+	transform: scale(1);
+	filter: brightness(0.1);
+	z-index: 2;
+}
+
+#goparkinglist>#mainbg_car:hover {
+	opacity: 1;
+	color: rgb(128, 255, 255);
+	filter: brightness(1.7);
+	animation: animate 4s linear infinite;
+	background-color: linear-gradient(90deg, rgb(128, 255, 255), #fff, rgb(128, 255, 255));
+	filter: drop-shadow(10px 6px 6px rgb(128, 255, 255));
+
+}
+
+#parkingInfoText {
+	position: fixed;
+	display: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+	left: 45%;
+	top: 49%;
+	background: linear-gradient(90deg, rgb(128, 255, 255), #fff, rgb(128, 255, 255));
+	background-size: 80%;
+	filter: drop-shadow(3px 1px 1px rgb(0, 0, 0));
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	opacity: 0.6;
+	z-index: 2;
+}
+
+/* 이미지 클릭 설명 */
+#infotext {
+	position: fixed;
+	font-size: 14px;
+	letter-spacing: 2px;
+	background: linear-gradient(90deg, rgb(128, 255, 255), #fff, rgb(128, 255, 255));
+	background-size: 80%;
+	filter: drop-shadow(3px 1px 1px rgb(0, 0, 0));
+	animation: animate 4s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	left: 40%;
+	top: 90%;
+	z-index: 5;
+}
+
+/* 텍스트 애니메이션 */
+@keyframes animate {
+	0% {
+		background-position: -400%;
+		opacity: 0;
+	}
+
+	50% {
+		background-position: 0%;
+		opacity: 1;
+	}
+
+	100% {
+		background-position: 400%;
+		opacity: 0;
+	}
+}
+
+/* 주차 리스트 */
+#parkingListTable {
+	font-size: 11px;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+#parkinglistLogo {
+	text-align: center;
+}
+
+
+
+.mymodalopen{
+	position:absolute;
+	width: 20%;
+	height: 20%;
+	left: 43%;
+	top: 35%;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	border: 1;
+	border-color: #000;
+	border-radius: 10px;
+	background-color: white;
+	animation: fadeinmymodalopen 1.5s ease-in-out both;
+	z-index: 999;
+}
+
+@keyframes fadeinmymodalopen {
+	0% {
+		top: 10%;
+		opacity: 0;
+	}
+
+	100% {
+		top: 35%;
+		opacity: 1;
+	}
+}
+
+.mymodalclose{
+	position:fixed;
+	width: 20%;
+	height: 20%;
+	left: 43%;
+	top: 30%;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	border: 1;
+	border-color: #000;
+	border-radius: 10px;
+	background-color: white;
+	animation: fadeinmymodalclose 1.5s ease-in-out both;
+	z-index: 999;
+}
+
+@keyframes fadeinmymodalclose {
+	0% {
+		top: 10%;
+		opacity: 0;
+	}
+
+	100% {
+		top: 35%;
+		opacity: 1;
+	}
+}
+
+#parkingListTable>tbody>tr>td>input{
+	text-align: center;
+	width: 100px;
+	border: 0;
+}
+
+.EndParkingRes {
+  opacity: 0.5;
+  pointer-events: none; 
+  background-color: #f1f1f1; 
+  color: #999; 
+  text-decoration: line-through;
+}
+

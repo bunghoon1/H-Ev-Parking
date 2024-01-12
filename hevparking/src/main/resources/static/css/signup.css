@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+#logo{
+	font-size: 20px;
+	color: rgb(162, 162, 162);
+	text-decoration: none;
+}
+
+
+#signupTable{
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%);
+	width: 40%;
+	font-size: 12px;
+	padding: 20px 40px;
+	text-align: center;
+	background: rgb(255, 255, 255);
+	opacity: 1;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	z-index: 0;
+}
+
+table{
+	margin: 10px 100px 30px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+}
+
+.writecss{
+	font-family: 'Noto Serif KR', serif;
+	font-weight: 500;
+	font-size: 11px;
+	border: 2;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#checkid{
+	color: green;
+	margin-left: 10px;
+}
+
+.writealign{
+	display:flex;
+	padding-left: 15%;
+	align-items:center;
+}
+.writealign > input{
+	
+	font-size: 12px;
+}
+
+.writealign > span{
+	display:flex;
+	font-size: 12px;
+	margin-left: 10px;
+	align-items:center;
+	
+}
+
+input {
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+    width: 120px;
+}
+svg{
+	margin-right: 10px;
+}
+
+#eyes{
+	position: absolute;
+	color: rgb(0, 128, 255);
+	left: 64%;
+}
+
+#addrline{
+	margin-bottom :10px;
+}
+
+#finalcheck > input{
+	font-size: 12px;
+	vertical-align: middle;
+	align-items: center;
+	width: 80px;
+}

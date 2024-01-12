@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.AccTransformMapper">
+	
+	<insert id="accinsert" parameterType="com.example.demo.vo.AccTransformVO">
+		INSERT INTO ACC_TRANSFORM(PRS_CODE ,ACC_BANK ,ACC_NAME ,ACC_NUM)
+		VALUES (#{prsCode},#{accBank}, #{accName}, #{accNum});
+	</insert>
+	
+	<delete id="pkaccdelete" parameterType="com.example.demo.vo.AccTransformVO">
+		DELETE FROM ACC_TRANSFORM WHERE PRS_CODE = #{prsCode}
+	</delete>
+	
+</mapper>

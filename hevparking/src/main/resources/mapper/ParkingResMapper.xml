@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.ParkingResMapper">
+	
+	<!-- 예약 정보 불러오기  -->
+	<select id="prsDateGet" resultType="com.example.demo.vo.ParkingResVO">
+		SELECT MEM_CODE,PRS_CODE,PRS_TYPE,PAYMENT_TYPE,PRS_AREA,PRS_LOCATION,START_DATE,START_TIME,
+		END_DATE,END_TIME,PRS_DATE,PARKING_STATUS,CHARGE_USE,PRICE FROM PARKING_RES;
+	</select>
+
+	<!-- 주차 자리 예약 (prsCode반환) -->
+	<insert id="insertParkingRes" parameterType="com.example.demo.vo.ParkingResVO" useGeneratedKeys="true" keyProperty="prsCode">
+		<selectKey keyProperty="prsCode" resultType="int" order="AFTER">
+	        SELECT LAST_INSERT_ID() as prsCode
+	    </selectKey>
+		
+		INSERT INTO
+		PARKING_RES(MEM_CODE,PRS_LOCATION,PRS_AREA,PRS_TYPE,PRS_DATE,START_DATE,END_DATE,START_TIME,END_TIME,PAYMENT_TYPE,PRICE,CHARGE_USE,COMENT)
+		VALUES (#{memCode},#{prsLocation},#{prsArea}, #{prsType}, NOW(),
+		#{startDate}, #{endDate}, #{startTime}, #{endTime}, #{paymentType}, #{price},#{chargeUse}, #{comment})
+		ON DUPLICATE KEY UPDATE MEM_CODE = #{memCode}, PRS_LOCATION = #{prsLocation},START_DATE = #{startDate},END_DATE = #{endDate},
+		START_TIME = #{startTime},END_TIME = #{endTime},PAYMENT_TYPE = #{paymentType},PRICE = #{price};
+	</insert>
+
+	<!-- 결제 완료시 예약날짜 업데이트 -->
+	<update id="updateDate" parameterType="com.example.demo.vo.ParkingResVO">
+		UPDATE PARKING_RES SET PRS_DATE = #{prsDate}, PAYMENT_TYPE = #{paymentType}, PARKING_STATUS = #{parkingStatus}
+		WHERE PRS_CODE = #{prsCode}
+	</update>
+	
+	<!-- 예약일 만료시 예약만료 업데이트 -->
+	<update id="updateEndParking" parameterType="com.example.demo.vo.ParkingResVO">
+		UPDATE PARKING_RES SET PARKING_STATUS = #{parkingStatus}
+		WHERE PRS_CODE = #{prsCode}
+	</update>
+
+	<!-- 주차 위치 중복 체크 -->
+	<select id="checkloc" resultType="int" parameterType="String">
+		SELECT
+		COUNT(prsLocation) FROM PARKING_RES WHERE PRS_LOCATION =
+		#{prsLocation}
+	</select>
+
+	<!-- 주차 예약 취소 -->
+	<delete id="parkinglistdelete" parameterType="com.example.demo.vo.ParkingResVO">
+		DELETE FROM PARKING_RES WHERE PRS_CODE = #{prsCode}
+	</delete>
+
+	<!-- resultMap 설정 -->
+	<resultMap id="parkingResResultMap" type="com.example.demo.vo.ParkingResVO">
+		<id property="prsCode" column="PRS_CODE" />
+		<result property="memCode" column="MEM_CODE" />
+		<result property="prsLocation" column="PRS_LOCATION" />
+		<result property="prsArea" column="PRS_AREA" />
+		<result property="prsType" column="PRS_TYPE" />
+		<result property="prsDate" column="PRS_DATE" />
+		<result property="startDate" column="START_DATE" />
+		<result property="endDate" column="END_DATE" />
+		<result property="startTime" column="START_TIME" />
+		<result property="endTime" column="END_TIME" />
+		<result property="paymentType" column="PAYMENT_TYPE" />
+		<result property="parkingStatus" column="PARKING_STATUS" />
+		<result property="price" column="PRICE" />
+		<result property="chargeUse" column="CHARGE_USE" />
+		<result property="comment" column="COMENT" />
+		
+		<!-- CardpaymentVO와의 연관 관계 설정 -->
+		<association property="cardpaymentVO" javaType="com.example.demo.vo.CardpaymentVO">
+			<id property="paymentCode" column="PAYMENT_CODE" />
+			<result property="prsCode" column="PRS_CODE" />
+			<result property="cardCode" column="CARD_CODE" />
+		</association>
+		
+		<!-- memberVO와의 연관 관계 설정 -->
+		<association property="memberVO" javaType="com.example.demo.vo.MemberVO">
+			<id property="memCode" column="MEM_CODE" />
+			<result property="memId" column="MEM_ID" />
+			<result property="memPw" column="MEM_PW" />
+			<result property="email" column="EMAIL" />
+			<result property="memName" column="MEM_NAME" />
+			<result property="phone" column="PHONE" />
+			<result property="addr1" column="ADDR1" />
+			<result property="addr2" column="ADDR2" />
+			<result property="date" column="CREATE_DATE" />
+		</association>
+
+		<!-- CardVO와의 연관 관계 설정 -->
+		<association property="cardVO" javaType="com.example.demo.vo.CardVO">
+			<id property="cardCode" column="CARD_CODE" />
+			<result property="memCode" column="MEM_CODE" />
+			<result property="cardName" column="CARD_NAME" />
+			<result property="cardNum" column="CARD_NUM" />
+			<result property="cvc" column="CARD_CVC" />
+			<result property="cardDate" column="CARD_DATE" />
+			<result property="cardPass" column="CARD_PASS" />
+		</association>
+
+		<!-- AccTransformVO와의 연관 관계 설정 -->
+		<association property="accTransformVO" javaType="com.example.demo.vo.AccTransformVO">
+			<id property="accCode" column="ACC_CODE" />
+			<result property="prsCode" column="PRS_CODE" />
+			<result property="accBank" column="ACC_BANK" />
+			<result property="accName" column="ACC_NAME" />
+			<result property="accNum" column="ACC_NUM" />
+		</association>
+		
+		<!-- ChargeResVO와의 연관 관계 설정 -->
+		<association property="chargeResVO" javaType="com.example.demo.vo.ChargeResVO">
+			<id property="chargeResCode" column="CHARGE_RES_CODE" />
+			<result property="prsCode" column="PRS_CODE" />
+			<result property="chargeCode" column="CHARGE_CODE" />
+			<result property="chargeTime" column="CHARGE_TIME" />
+			<result property="chargePrice" column="CHARGE_PRICE" />
+		</association>
+		
+		<!-- ChargeVO와의 연관 관계 설정 -->
+		<association property="chargeVO" javaType="com.example.demo.vo.ChargeVO">
+			<result property="chargeCode" column="CHARGE_CODE" />
+			<result property="chargeLoc" column="CHARGE_LOC" />
+			<result property="chargeName" column="CHARGE_NAME" />
+			<result property="chargeState" column="CHARGE_STATE" />
+			<result property="chargeSpeed" column="CHARGE_SPEED" />
+			<result property="chargeType" column="CHARGE_TYPE" />
+			<result property="timePrice" column="TIME_PRICE" />
+			<result property="chargeUsetime" column="CHARGE_USETIME" />
+		</association>
+	</resultMap>
+
+	<!-- 마이페이지 주차예약,카드결제,계좌이체 정보 조회 -->
+	<select id="parkingList" resultMap="parkingResResultMap">
+		SELECT
+	    PR.PRS_CODE,
+	    PR.MEM_CODE, PR.PRS_LOCATION, PR.PRS_AREA,
+	    PR.PRS_TYPE, PR.PRS_DATE,
+	    PR.START_DATE, PR.END_DATE,
+	    PR.START_TIME, PR.END_TIME,
+	    PR.CHARGE_USE, PR.PAYMENT_TYPE, 
+	    PR.PARKING_STATUS,PR.PRICE, PR.COMENT,
+	    CP.PAYMENT_CODE, CP.CARD_CODE,
+	    C.CARD_CODE, C.CARD_NAME, C.CARD_NUM, C.CARD_CVC, C.CARD_DATE,
+	    CR.CHARGE_CODE, CR.CHARGE_TIME, CR.CHARGE_PRICE,
+	    CM.CHARGE_NAME, CM.CHARGE_SPEED, CM.CHARGE_TYPE,
+	    M.MEM_NAME, M.PHONE, M.EMAIL
+	FROM
+	    PARKING_RES PR
+	LEFT JOIN
+	    CARD_PAYMENT CP ON PR.PRS_CODE = CP.PRS_CODE
+	LEFT JOIN
+	    CARD C ON C.CARD_CODE = CP.CARD_CODE
+	LEFT JOIN
+	    CHARGE_RES CR ON PR.PRS_CODE = CR.PRS_CODE
+	LEFT JOIN
+	    CHARGE CM ON CR.CHARGE_CODE = CM.CHARGE_CODE
+	LEFT JOIN
+	    MEMBER M ON M.MEM_CODE = PR.MEM_CODE    
+	ORDER BY PR.PRS_DATE DESC;
+	</select>
+</mapper>

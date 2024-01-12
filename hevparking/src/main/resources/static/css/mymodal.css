@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#confirmModalcheck,#passWordCheck,#passWordChange {
+	border-color: blue;
+	font-size: 12px;
+	font-weight: 400px;
+}
+
+#confirmModalcheck:hover,#passWordCheck:hover,#passWordChange:hover {
+	border-color: blue;
+	color: black;
+	background-color: #54a0f7;
+}
+
+#confirmModalcancel,#passWordCheckCancel,#passWordChangeCancel {
+	border-color: red;
+	font-size: 12px;
+}
+
+#confirmModalcancel:hover,#passWordCheckCancel:hover,#passWordChangeCancel:hover {
+	border-color: red;
+	color: red;
+	background-color: #f76a54;
+}
+
+#alertModalcheck {
+	border-color: gray;
+	font-size: 12px;
+}
+
+#alertModalcheck:hover {
+	border-color: gray;
+	color: gray;
+	background-color: #bdbdbd;
+}
+
+.myModalWriteinputbox{
+	width: 260px;
+	height: 30px;
+}

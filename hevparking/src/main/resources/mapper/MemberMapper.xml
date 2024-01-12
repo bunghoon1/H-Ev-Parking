@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.MemberMapper">
+	
+	<!-- 회원가입 -->
+	<insert id="insertMember" parameterType="com.example.demo.vo.MemberVO">
+		 INSERT INTO MEMBER(MEM_ID,MEM_PW,EMAIL,MEM_NAME,PHONE,ADDR1,ADDR2,CREATE_DATE) 
+		 VALUES (#{memId}, #{memPw}, #{email}, #{memName}, #{phone}, #{addr1},#{addr2}, now());
+	</insert>
+	
+	<!-- 회원가입시 차량 정보 insert -->
+	<insert id="insertCarinfo" parameterType="com.example.demo.vo.CarInfoVO"> 
+		 
+		 <selectKey keyProperty="memCode" resultType="int" order="BEFORE">	<!-- VO에 memCode가 입력되자마자 사용할 수 있게 -->
+		 	SELECT LAST_INSERT_ID()
+		 </selectKey>
+		 
+		 INSERT INTO CARINFO(CAR_NUM,MEM_CODE,CAR_NAME,CAR_CATEGORY,CAR_SALE_TYPE) <!-- VO에 mem_code가 자동생성되어서 바로 사용가능 -->
+		 VALUES (#{carNum},#{memCode}, #{carName}, #{carCategory}, #{carSale});	
+	</insert>
+	
+	<!-- 아이디 중복 체크 -->
+	<select id="checkid" resultType="int" parameterType="String">
+		SELECT COUNT(MEM_ID) FROM MEMBER WHERE MEM_ID = #{memId}
+	
+	</select>
+	
+	<!-- 차량 번호 중복 체크 -->
+	<select id="checkcarnum" resultType="int" parameterType="String">
+		SELECT COUNT(CAR_NUM) FROM CARINFO WHERE CAR_NUM = #{carNum}
+	</select>
+	
+	
+	<!-- 회원 로그인-->
+	<resultMap id="loginResultMap" type="com.example.demo.vo.MemberVO">
+		<id property="memCode" column="MEM_CODE" />
+		<result property="memId" column="MEM_ID" />
+		<result property="memPw" column="MEM_PW" />
+		<result property="email" column="EMAIL" />
+		<result property="memName" column="MEM_NAME" />
+		<result property="phone" column="PHONE" />
+		<result property="addr1" column="ADDR1" />
+		<result property="addr2" column="ADDR2" />
+		<result property="date" column="CREATE_DATE" />
+
+	<association property="carInfo" javaType="com.example.demo.vo.CarInfoVO">
+		<id property="carNum" column="CAR_NUM" />
+		<result property="memCode" column="MEM_CODE" />
+		<result property="carName" column="CAR_NAME" />
+		<result property="carCategory" column="CAR_CATEGORY" />
+		<result property="carSale" column="CAR_SALE_TYPE" />
+	</association>
+	</resultMap>
+	
+	<!-- 회원 정보 + 차량 정보 -->
+	<select id="login" resultMap="loginResultMap">
+		SELECT M.MEM_CODE, M.MEM_ID, M.MEM_PW,M.EMAIL, M.MEM_NAME, M.PHONE, M.ADDR1,M.ADDR2,
+		M.CREATE_DATE, C.CAR_NUM, C.CAR_NAME, C.CAR_CATEGORY, C.CAR_SALE_TYPE
+		FROM MEMBER M LEFT JOIN CARINFO C ON M.MEM_CODE = C.MEM_CODE
+		WHERE M.MEM_ID = #{memId} AND M.MEM_PW = #{memPw}
+	</select>
+	
+	<!-- 회원정보 조회  -->
+	<select id="MemberDataGet" resultMap="loginResultMap">
+		SELECT M.MEM_CODE,M.MEM_NAME,M.MEM_ID,M.MEM_PW,M.EMAIL,M.PHONE,M.ADDR1,M.ADDR2,
+		C.CAR_NUM,C.CAR_NAME,C.CAR_CATEGORY,C.CAR_SALE_TYPE
+		FROM MEMBER M LEFT JOIN CARINFO C ON M.MEM_CODE = C.MEM_CODE;
+	
+	</select>
+	
+	<!-- 회원정보 업데이트  -->
+	<update id="memInfoUpdate" parameterType="com.example.demo.vo.MemberVO">
+		UPDATE MEMBER SET ADDR1 = #{addr1}, ADDR2 = #{addr2}, EMAIL = #{email}, PHONE = #{phone} WHERE MEM_CODE = #{memCode}
+	</update>
+	
+	<update id="carInfoUpdate" parameterType="com.example.demo.vo.CarInfoVO">
+		UPDATE CARINFO SET CAR_CATEGORY = #{carCategory}, CAR_NAME = #{carName}, CAR_NUM = #{carNum} WHERE MEM_CODE = #{memCode}
+	</update>
+	
+	<update id="PasswrodChange" parameterType="com.example.demo.vo.MemberVO">
+		UPDATE MEMBER SET MEM_PW = #{memPw} WHERE MEM_CODE = #{memCode}
+	</update>
+	
+</mapper>

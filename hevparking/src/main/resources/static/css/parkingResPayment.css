@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+#backgroundbg {
+	position: fixed;
+	overflow: hidden;
+	width: 1920px;
+}
+
+.logo {
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	animation: firstshow 1.5s ease-in both;
+	
+}
+
+#resNexttable {
+	position: absolute;
+	overflow: hidden;
+	top:5%;
+	left: 710px;
+	width: 500px;
+	font-size: 12px;
+	font-weight: 800;
+	padding: 15px;
+	opacity: 0.9;
+	font-family: 'Work sans', sans-serif;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.75);
+	z-index: 1;
+}
+
+#tablebg{
+	height: 100%;
+	opacity: 0.95;
+	border-radius: 10px;
+	background-color: azure;
+}
+
+#paymentGroup{
+	width:400px;
+	background-color: black;
+}
+
+.infotable {
+	width: 100%;
+	padding: 2%;
+	font-family: 'Work sans', sans-serif;
+	border-width: 1px;
+	border-collapse: separate;
+	border-spacing: 0 3px;
+	line-height: 25px;
+}
+
+
+
+/* 주차예약,충전기 정보 값들 */
+.paymentInfo{
+	border: 0;
+	width:200px;
+	text-align: right;
+	background-color: azure;
+	pointer-events: none;
+}
+
+/* 테이블 정보 글자 크기 및 변경 버튼 */
+#parkingresInfo,#chargeInfo,#paymentChoice,#paymentTotal{
+	margin-left: 5px;
+	font-size: 13px;
+	vertical-align: middle;
+	align-items: center;	
+}
+#parkingresInfo>button{
+	width:60px;
+	height:30px;
+	font-size:11px;
+	margin-left:62%;
+}
+
+/* 카드 버튼 */
+#card,#acc{
+	opacity: 0.8;
+	border: 1;
+	background-color: rgb(238, 247, 255);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+
+/* 카드 이미지 슬라이드 위치 */
+.accordion-body{		
+	overflow: hidden;
+	height: 200px;
+}
+.accordion-body > .swiper-container{
+	width: 200px;
+	height: 120px;
+	transform: translate(55%, 10%); /* 카드 슬라이드 위치 변경*/
+}
+
+.swiper-container > .swiper-button-prev{
+	position: fixed;
+	size: 10px;
+	transform: translate(-100px,0px);
+	z-index: 3;
+}
+
+.swiper-container > .swiper-button-next{
+	position: fixed;
+	transform: translate(80px,0px);
+	z-index: 3;
+}
+/* 카드 이미지 슬라이드 본체 */
+
+.swiper-wrapper{
+	align-items: center;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.swiper-slide {
+	display: flex;
+	border-style: dotted;
+	background-color: initial;
+	background-position: center center;
+	font-size: 14px;
+	box-shadow: 0px 2px 10px 0px #848484;
+}
+
+.selectcardNum{
+	display: flex;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	transform: translate(28px,18px);
+}
+
+#newCardButton:hover{
+	cursor: pointer;
+}
+
+/* 카드 등록 이미지 */
+.paymentcardImage_bc{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/bccard.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_hana{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/hanacard.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_hyundai{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/hyundaicard.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_kb{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/kbcard.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_lotte{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/lottecard.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_nc{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/nccard.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_samsung{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/samsungcard.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+.paymentcardImage_sinhan{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/sinhancard.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;	
+}
+
+.paymentcardImage_woori{
+	border: 0;
+	border-radius: 5px;
+	background-image: url('../image/parkingresPayment/card/wooricard.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	opacity: 1;
+	padding: 2px;
+	z-index: 1;
+}
+
+
+/* 카드 등록 */
+#insertcardnumGroup{
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	font-size: 12px;
+	margin-left:20px;
+}
+
+#insertcardnumGroup>input{
+	text-align: center;
+	font-size: 12px;
+	width: 70px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.carddateGroup{
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	font-size: 12px;
+	margin-left:20px;
+}
+
+.carddateGroup>input,.carddateGroup>select{
+	text-align: center;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.cardpasscvc>input{
+	text-align: center;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.cardpasscvc{
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	font-size: 12px;
+	margin-left:20px;
+}
+
+.cardpasscvc>input{
+	text-align: center;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+#accGroup>tr>td{
+	vertical-align: middle;
+	width: 200px;
+	
+}
+
+#accBank,#accName,#accNum{
+	text-align: center;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.accordion-button{
+	font-size: 12px;
+}
+
+.finalbtnGroup {
+	display: flex;
+	margin-left:26%;
+	text-align: center;
+}
+.finalbtnGroup > button {
+	width: 90px;
+	font-size: 14px;
+}
+
+#cardPasscheck{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	left: 50%;
+	top:50%;
+	background-color: white;
+	z-index: 10;
+}
+
+.hide-days .ui-datepicker-calendar {
+    display: none;
+}
+
+	

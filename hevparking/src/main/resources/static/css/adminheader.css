@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+nav{
+	position: fixed;
+	top: 4%;
+	left: 550px;
+	width: 1200px;
+  	color: white;
+  	z-index: 10;
+}
+
+a{
+	text-decoration-line: none;
+}
+
+.logo{
+	font-size: 20px;
+	color: rgb(162, 162, 162);
+	text-decoration: none;
+}
+
+.logo >strong{
+  display:inline-block;
+  text-decoration: none;
+  color: rgb(120, 120, 120);
+  font-size:25px;
+}
+
+div.container .textcss
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 16px Raleway;
+    margin: 10px;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.borderYtoX .textcss:before, .borderYtoX .textcss:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+    
+}
+
+.borderYtoX .textcss:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.borderYtoX .textcss:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.borderYtoX .textcss:hover:before, .borderYtoX .textcss:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+    
+}
+
+/* Border X get width  */
+.borderXwidth .textcss:before, .borderXwidth .textcss:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.4s;
+}
+
+.borderXwidth .textcss:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.borderXwidth .textcss:after
+{
+    right: 0px;
+    bottom: 0px;
+    
+    
+}
+
+.borderXwidth .textcss:hover:before, .borderXwidth .textcss:hover:after
+{
+    opacity: 1;
+    width: 100%;
+    
+    
+}
+
+.textcss:hover, .navlogo:hover{
+	
+	color:rgb(128, 255, 255);
+    text-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}

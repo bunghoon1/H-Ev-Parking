@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.ChargeResMapper">
+
+	<!-- 충전기 사용 예약 -->
+	<insert id="chargeResinsert" parameterType="com.example.demo.vo.ChargeResVO">
+		INSERT INTO
+		CHARGE_RES(PRS_CODE,CHARGE_CODE,CHARGE_TIME,CHARGE_PRICE)
+		VALUES (#{prsCode},#{chargeCode},#{chargeTime},#{chargePrice});
+	</insert>
+	
+	<!-- 충전기 예약 삭제 -->
+	<delete id="chargeResdelete" parameterType="com.example.demo.vo.ChargeResVO">
+		DELETE FROM CHARGE_RES WHERE PRS_CODE = #{prsCode}
+	</delete>
+
+</mapper>

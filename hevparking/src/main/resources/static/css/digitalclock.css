@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#clock {
+    position: absolute;
+    color: rgb(0, 0, 64);
+    
+    width: 500px;
+}
+
+#clocktime {
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    font-size: 11px;
+    
+}
+
+#clockdate {
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 11px;
+}
