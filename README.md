@@ -55,9 +55,9 @@
 <br/>
 
 **API 및 기타** <br/>
-<h6><img src="https://img.shields.io/badge/kakao-ffffff?style=for-the-badge&logo=kakao&logoColor=eddb13">Map API
-,<img src="https://img.shields.io/badge/kakao-ffffff?style=for-the-badge&logo=kakao&logoColor=eddb13">주소 API 
-, 공공데이터 포털<h6>
+<h6><img src="https://img.shields.io/badge/kakao-ffffff?style=for-the-badge&logo=kakao&logoColor=eddb13">Map API<br/> 
+<img src="https://img.shields.io/badge/kakao-ffffff?style=for-the-badge&logo=kakao&logoColor=eddb13">주소 API<br/>  
+공공데이터 포털<h6>
 
 
 <br/>
