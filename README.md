@@ -71,7 +71,7 @@
 
   
 ## **👨🏻‍💻 기능 구현**
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/baa9c8c2-c5b0-48a7-bf0d-667c86c77904" width="100%"/>
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/a1854842-db93-4789-a141-4c37993a3a98" width="100%"/>
 
 
 
