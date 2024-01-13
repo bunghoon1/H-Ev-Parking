@@ -110,5 +110,6 @@
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingResPayment.js"><Strong>js코드 확인</Strong></a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingResPayment.css">Strong>css코드 확인</Strong></a>
 > 
-> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/a496db5b-8b4a-47bb-b03c-2a79d53c460b">
-> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/03928a6a-1cb3-4273-a5f5-321ea323cb8f" width="50%" height="50%"/></a>
+> <a href="https://clipchamp.com/watch/IHgpXTF23Qv">
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/68811358-c9d9-41ef-a09c-e3f2ca8f3202" width="50%" height="50%"/></a>
+
