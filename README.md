@@ -12,25 +12,28 @@
 > 저에 대해 궁금하거나 같이 공부를 원하신다면 언제든지 제 개인 블로그에 놀러 와 주세요^^ <a href="https://bunghoon1.tistory.com/">(클릭)💕</a>
 
 <br/>
-
-## **📗 목차**
-- 📃 프로젝트 소개
-- 📚 사용 기술
-- 📅 프로젝트 일정
-- 📊 ERD다이어그램
-
-## **📃 프로젝트 소개**
->  H/Ev Parking 주차 관리 시스템은 앞으로 전기차의 소요가 많아질 것을 생각하여 <br/>
-전기차와 일반 차가 공용으로 이용할 수 있는 주차 시스템을 개발하게 되었습니다. <br/>
-제가 만든 프로젝트에는 전기차 충전기를 예약하고 사용할 수 있는 충전기 예약 기능과 <br/>
-주차장에 실시간으로 주차하는 기능과 30일 단위로 주차할 수 있는 정기 주차 선택 기능이 있습니다. <br/>
-주차 예약 시 실시간으로 좌석을 선택/확인 하여 주차 자리를 찾지 않아도 되는 편리한 기능이 있습니다. <br/>
-그리고 서울특별시에 있는 전기차 충전소를 조건에 맞게 검색하는 기능이 있어 언제든지 전기차 충전소를 검색하여 주차를 이용하실 수 있습니다. <br/>
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="1920px"/>
+<br/>
+<br/>
 
 
+## **📃 프로젝트 개요**
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="100%"/><br/>
 
-#1. 제작 기간 2023년 10월 11일 ~ 2024년 1월 10일
+> **프로젝트 명:** H/Ev Parking 전기차/일반차 주차 통합 관리 시스템
+>
+> **기획/제작:** 김병훈
+>
+> **분 류:** 개인 프로젝트
+>
+> **제작 기간:** 2023년 10월 11일 ~ 2024년 1월10일(3달)
+>
+> **주요 기능:** 회원가입, 회원정보수정, 일반차/전기차 주차예약 및 확인, 충전기 예약, 결제(카드결제/계좌이체), 전기차 충전소 검색<br/><br/> 
+
+
+<br/>
+<br/>
+<br/>
+
 
 ## 📚 사용 기술
 
@@ -59,21 +62,23 @@
 
 
 <br/>
+<br/>
+<br/>
 
 
 # 📊 ERD
+<details>
+<summary>ERD</summary>
+<div markdown="1" style="padding-left: 15px;"> 
 <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/9e79b3ed-d582-412f-b0e5-021df5e3b0c3" width="800px"/>
-- 상세정보는: https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/files/13927492/default.txt
+</div>
+</details>
+
+<br/>
+<br/>
+<br/>
+
   
 ## **👨🏻‍💻 기능 구현**
 ### **1. 회원가입**
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/839be559-e8c3-45c0-994b-e0d7e114ff55"/><br/>
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/23f36a53-dd48-4737-9c4c-760fed84db21" width="750px"/><br/>
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/7b97de2c-31ef-4ff4-ab43-dceffc974228" width="750px"/><br/>
-
-
-- 아이디, 비밀번호, Email, 차량번호 유효성 검사
-- 주소 검색 API사용
-
-
-### **1. 로그인**
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="1920px"/>
