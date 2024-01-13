@@ -62,11 +62,18 @@
 
 
 # 📊 ERD
-<details>
-<summary>ERD</summary>
-<div markdown="1" style="padding-left: 15px;"> 
 <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/9e79b3ed-d582-412f-b0e5-021df5e3b0c3" width="800px"/>
-</div>
-</details>
+- 상세정보는: https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/files/13927492/default.txt
   
 ## **👨🏻‍💻 기능 구현**
+### **1. 회원가입**
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/839be559-e8c3-45c0-994b-e0d7e114ff55"/><br/>
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/23f36a53-dd48-4737-9c4c-760fed84db21" width="750px"/><br/>
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/7b97de2c-31ef-4ff4-ab43-dceffc974228" width="750px"/><br/>
+
+
+- 아이디, 비밀번호, Email, 차량번호 유효성 검사
+- 주소 검색 API사용
+
+
+### **1. 로그인**
