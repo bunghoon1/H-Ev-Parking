@@ -26,13 +26,11 @@
 >
 > **제작 기간:** 2023년 10월 11일 ~ 2024년 1월10일(3달)
 >
-> **주요 기능:** 회원가입, 회원정보수정, 일반차/전기차 주차예약 및 확인, 충전기 예약, 결제(카드결제/계좌이체), 전기차 충전소 검색<br/><br/> 
-
+> **주요 기능:** 일반차/전기차 주차 예약 , 충전기 예약, 결제(카드결제/계좌이체), 전기차 충전소 검색<br/><br/> 
 
 <br/>
 <br/>
 <br/>
-
 
 ## 📚 사용 기술
 
@@ -55,9 +53,7 @@
 <br/>
 
 **API 및 기타** <br/>
-<h6><img src="https://img.shields.io/badge/kakao-ffffff?style=for-the-badge&logo=kakao&logoColor=eddb13">Map API<br/> 
-<img src="https://img.shields.io/badge/kakao-ffffff?style=for-the-badge&logo=kakao&logoColor=eddb13">주소 API<br/>  
-공공데이터 포털<h6>
+<h6>Kakao Map API, Kakao 주소 API, 공공데이터 포털<h6>
 
 
 <br/>
@@ -75,5 +71,8 @@
 
   
 ## **👨🏻‍💻 기능 구현**
-### **1. 회원가입**
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="1920px"/>
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/baa9c8c2-c5b0-48a7-bf0d-667c86c77904" width="100%"/>
+
+
+
+
