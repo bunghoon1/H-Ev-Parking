@@ -110,6 +110,6 @@
 <br/><br/><br/><br/>
 
 ## **🎬 시연 영상**
-<a href="https://www.youtube.com/watch?v=DL3BFUMvQAc">
+<a href="https://www.youtube.com/watch?v=DL3BFUMvQAc">최종영상</a>
 
 
