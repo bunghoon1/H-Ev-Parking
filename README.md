@@ -18,40 +18,42 @@
 
 
 ## 📃 프로젝트 개요
-프로젝트 명: H/Ev Parking 전기차/일반차 주차 통합 관리 시스템
 
-기획/제작: 김병훈*
+> 프로젝트 명: H/Ev Parking 전기차/일반차 주차 통합 관리 시스템
 
-분 류: 개인 프로젝트
+> 기획/제작: 김병훈
 
-제작 기간: 2023년 10월 11일 ~ 2024년 1월10일(3달)
+> 분 류: 개인 프로젝트
 
-주요 기능: 일반차/전기차 주차 예약 , 충전기 예약, 결제(카드결제/계좌이체), 전기차 충전소 검색<br/><br/> 
+>제작 기간: 2023년 10월 11일 ~ 2024년 1월10일(3달)
+
+>주요 기능: 일반차/전기차 주차 예약 , 충전기 예약, 결제(카드결제/계좌이체), 전기차 충전소 검색
+
+<br/><br/> 
 <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="100%"/><br/>
 
+<br/>
+<br/>
+<br/>
 
-
-<br/>
-<br/>
-<br/>
 
 ## 📚 사용 기술
 
 **개발 환경** <br/>
-<img src="https://img.shields.io/badge/Gradle-ffffff?style=for-the-badge&logo=Gradle&logoColor=292c47">
+> <img src="https://img.shields.io/badge/Gradle-ffffff?style=for-the-badge&logo=Gradle&logoColor=292c47">
  
  **Front-End** <br/>
-<img src="https://img.shields.io/badge/javascript-ffffff?style=for-the-badge&logo=javascript&logoColor=fff305">
-,<img src="https://img.shields.io/badge/css3-ffffff?style=for-the-badge&logo=css3&logoColor=blue">
-,<img src="https://img.shields.io/badge/html5-ffffff?style=for-the-badge&logo=html5&logoColor=red">
-,<img src="https://img.shields.io/badge/jquery-ffffff?style=for-the-badge&logo=jquery&logoColor=black">
-,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/e279b1ad-a3ab-4951-b759-455e47960d56" width="50px" height="30px">
+> <img src="https://img.shields.io/badge/javascript-ffffff?style=for-the-badge&logo=javascript&logoColor=fff305">
+> ,<img src="https://img.shields.io/badge/css3-ffffff?style=for-the-badge&logo=css3&logoColor=blue">
+> ,<img src="https://img.shields.io/badge/html5-ffffff?style=for-the-badge&logo=html5&logoColor=red">
+> ,<img src="https://img.shields.io/badge/jquery-ffffff?style=for-the-badge&logo=jquery&logoColor=black">
+> ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/e279b1ad-a3ab-4951-b759-455e47960d56" width="50px" height="30px">
 <br/>
 
 **Back-End** <br/>
-<img src="https://img.shields.io/badge/springboot-ffffff?style=for-the-badge&logo=springboot&logoColor=25c43d">
-,<img src="https://img.shields.io/badge/mariadb-ffffff?style=for-the-badge&logo=mariadb&logoColor=173654">
-,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/f3abdca5-1c7a-4a2b-920a-5f46be11cce9" width="50px" height="30px">
+> <img src="https://img.shields.io/badge/springboot-ffffff?style=for-the-badge&logo=springboot&logoColor=25c43d">
+> ,<img src="https://img.shields.io/badge/mariadb-ffffff?style=for-the-badge&logo=mariadb&logoColor=173654">
+> ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/f3abdca5-1c7a-4a2b-920a-5f46be11cce9" width="50px" height="30px">
 
 <br/>
 
