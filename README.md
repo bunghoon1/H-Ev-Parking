@@ -79,23 +79,36 @@
 
   
 ## **👨🏻‍💻 기능 구현**
-시연 영상은 이미지를 클릭해 주세요!
+😎시연 영상은 이미지를 클릭해 주세요!
 
-### **1. 🚗주차 예약 및 ⛽충전기 사용 예약**
+### **1. 🖼메인 화면**
+> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/index.js">js코드 확인</a>
+> , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/index.css">css코드 확인</a>
+> 
+> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/2c98e34a-109a-403c-a8f8-670ba3332da1">
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/5f11113d-d2c4-4a10-afca-87c12bb83494" width="50%" height="50%"/></a>
+
+### **2. 🚗주차 예약 및 ⛽충전기 사용 예약**
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingRes.js">js코드 확인</a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingRes.css">css코드 확인</a>
 > 
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/398c73da-03a4-4006-8ca4-f968be7fc814">
 > <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/5f11113d-d2c4-4a10-afca-87c12bb83494" width="50%" height="50%"/></a>
 
-
-
 <br/>
 
-### **2. 결제(카드결제/계좌이체)**
+### **3. 결제(카드결제/계좌이체)**
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingResPayment.js">js코드 확인</a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingResPayment.css">css코드 확인</a>
 > 
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/a496db5b-8b4a-47bb-b03c-2a79d53c460b">
 > <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/03928a6a-1cb3-4273-a5f5-321ea323cb8f" width="50%" height="50%"/></a>
 
+<br/>
+
+### **4. 전기차 충전소 조회**
+> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingResPayment.js">js코드 확인</a>
+> , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingResPayment.css">css코드 확인</a>
+> 
+> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/a496db5b-8b4a-47bb-b03c-2a79d53c460b">
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/03928a6a-1cb3-4273-a5f5-321ea323cb8f" width="50%" height="50%"/></a>
