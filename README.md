@@ -13,7 +13,7 @@
 >  
 > 프로젝트 시연 영상은 마지막에 있습니다.(7분정도! 화질은 꼭 HD화질로 보세요!!)
 > 
-> 저에 대해 궁금하거나 같이 공부를 원하신다면 언제든지 제 개인 블로그에 놀러 와 주세요^^  <a href="https://bunghoon1.tistory.com/">💕(클릭)</a>
+> 저에 대해 궁금하거나 같이 공부를 원하신다면 언제든지 제 개인 블로그에 놀러 와 주세요^^  <a href="https://bunghoon1.tistory.com/">🏠(클릭)</a>
 >
 <br/><br/><br/><br/>
 
@@ -73,7 +73,7 @@
 ## **👨🏻‍💻 기능 구현**
 📽시연 영상은 이미지를 클릭해 주세요!
 
-### **1. 🖼메인 화면**
+### **🖼1. 메인 화면**
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/index.js"><Strong>js코드 확인</Strong></a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/index.css"><Strong>css코드 확인</Strong></a>
 > 
@@ -82,7 +82,7 @@
 
 <br/><br/><br/><br/>
 
-### **2. 🚗주차 예약 및 ⛽충전기 사용 예약**
+### **🚘2. 주차 예약 및 충전기 사용 예약**
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingRes.js"><Strong>js코드 확인</Strong></a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingRes.css"><Strong>css코드 확인</Strong></a>
 > 
@@ -91,7 +91,7 @@
 
 <br/><br/><br/><br/>
 
-### **3. ⌨결제(카드결제/계좌이체)**
+### **⌨3. 결제(카드결제/계좌이체)**
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingResPayment.js"><Strong>js코드 확인</Strong></a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingResPayment.css"><Strong>css코드 확인</Strong></a>
 > 
@@ -100,7 +100,7 @@
 
 <br/><br/><br/><br/>
 
-### **4. 💡전기차 충전소 조회**
+### **⛽4. 전기차 충전소 조회**
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/webapp/WEB-INF/views/searchMap.jsp"><Strong>jsp코드 확인</Strong></a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/searchMap.css"><Strong>css코드 확인</Strong></a>
 > 
