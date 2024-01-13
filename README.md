@@ -79,12 +79,15 @@
 
   
 ## **👨🏻‍💻 기능 구현**
-> 시연 영상은 이미지를 클릭해 주세요!
+시연 영상은 이미지를 클릭해 주세요!
 
 ### **1. 🚗주차 예약 및 충전기 사용 예약**
-<a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/398c73da-03a4-4006-8ca4-f968be7fc814">
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/5f11113d-d2c4-4a10-afca-87c12bb83494" width="50%" height="50%"/></a>
-<a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingRes.js"></a>
+> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/js/parkingRes.js">코드 확인</a>
+> 
+> <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/398c73da-03a4-4006-8ca4-f968be7fc814">
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/5f11113d-d2c4-4a10-afca-87c12bb83494" width="50%" height="50%"/></a>
+
+
 
 <br/>
 
