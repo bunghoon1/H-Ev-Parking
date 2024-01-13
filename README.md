@@ -5,12 +5,11 @@
 
 # 😃Intro
 
->  안녕하세요! "이왕 하는 거 재밌게 하자!" 신입 풀스택 개발자 김병훈입니다. <br/>
-> 2023년 3월부터 6개월간 항공 풀스택 개발자 국비 교육 수업을 듣고 많은 것을 배웠습니다. <br/>
-> 교육이 끝난 이후 부족함을 느끼고 능력을 향상하고자 3개월 동안 개인 프로젝트를 진행하였습니다. <br/>
+> 안녕하세요! "이왕 하는 거 재밌게 하자!" 신입 풀스택 개발자 김병훈입니다. <br/>
+> 2023년 3월부터 6개월간 항공 풀스택 개발자 국비 교육을 듣고난 이후 3개월간 만든 개인 프로젝트 입니다. <br/>
 > 조금 늦긴 했지만 20대와 같은 열정으로 성장을 두려워하지 않고 능력 있는 개발자가 되기 위해 열심히 준비하고 있습니다. <br/>
-> 저에 대해 궁금하거나 같이 공부를 원하신다면 언제든지 제 개인 블로그에 놀러 와 주세요^^ <a href="https://bunghoon1.tistory.com/">(클릭)💕</a>
-
+> 프로젝트 시연 영상은 마지막에 있습니다.(7분정도! 화질은 꼭 HD화질로 보세요!!)  <br/>
+> 저에 대해 궁금하거나 같이 공부를 원하신다면 언제든지 제 개인 블로그에 놀러 와 주세요^^ <h6><a href="https://bunghoon1.tistory.com/">💕(클릭)</a></h6>
 <br/>
 <br/>
 <br/>
@@ -67,12 +66,8 @@
 
 
 # 📊 ERD
-<details>
-<summary>ERD</summary>
-<div markdown="1" style="padding-left: 15px;"> 
-<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/9e79b3ed-d582-412f-b0e5-021df5e3b0c3" width="800px"/>
-</div>
-</details>
+<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/9e79b3ed-d582-412f-b0e5-021df5e3b0c3" width="100%"/>
+
 
 <br/>
 <br/>
