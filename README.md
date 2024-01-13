@@ -3,7 +3,7 @@
 
 <br/>
 
-## **😃소개**
+## **😃소 개**
 
 > 안녕하세요! "이왕 하는 거 재밌게 하자!" 신입 풀스택 개발자 김병훈입니다.
 >  
@@ -15,9 +15,7 @@
 > 
 > 저에 대해 궁금하거나 같이 공부를 원하신다면 언제든지 제 개인 블로그에 놀러 와 주세요^^  <a href="https://bunghoon1.tistory.com/">💕(클릭)</a>
 >
-<br/>
-<br/>
-<br/>
+<br/><br/><br/><br/>
 
 
 ## 📃 프로젝트 개요
@@ -35,9 +33,7 @@
 <br/><br/> 
 <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="100%"/><br/>
 
-<br/>
-<br/>
-<br/>
+<br/><br/><br/><br/>
 
 
 ## 📚 사용 기술
@@ -64,18 +60,14 @@
 > <h6>Kakao Map API, Kakao 주소 API, 공공데이터 포털</h6>
 
 
-<br/>
-<br/>
-<br/>
+<br/><br/><br/><br/>
 
 
 ## 📊 ERD
 <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/9e79b3ed-d582-412f-b0e5-021df5e3b0c3" width="100%"/>
 
 
-<br/>
-<br/>
-<br/>
+<br/><br/><br/><br/>
 
   
 ## **👨🏻‍💻 기능 구현**
