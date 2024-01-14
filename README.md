@@ -43,16 +43,16 @@
 >
 > 
 > **Front-End** <br/>
-> <img src="https://img.shields.io/badge/javascript-ffffff?style=for-the-badge&logo=javascript&logoColor=fff305">
-> ,<img src="https://img.shields.io/badge/css3-ffffff?style=for-the-badge&logo=css3&logoColor=blue">
-> ,<img src="https://img.shields.io/badge/html5-ffffff?style=for-the-badge&logo=html5&logoColor=red">
-> ,<img src="https://img.shields.io/badge/jquery-ffffff?style=for-the-badge&logo=jquery&logoColor=black">
+> <img src="https://img.shields.io/badge/javascript-dedede?style=for-the-badge&logo=javascript&logoColor=fff305">
+> ,<img src="https://img.shields.io/badge/css3-dedede?style=for-the-badge&logo=css3&logoColor=blue">
+> ,<img src="https://img.shields.io/badge/html5-dedede?style=for-the-badge&logo=html5&logoColor=red">
+> ,<img src="https://img.shields.io/badge/jquery-dedede?style=for-the-badge&logo=jquery&logoColor=black">
 > ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/e279b1ad-a3ab-4951-b759-455e47960d56" width="50px" height="30px">
 >
 >
 > **Back-End** <br/>
-> <img src="https://img.shields.io/badge/springboot-ffffff?style=for-the-badge&logo=springboot&logoColor=25c43d">
-> ,<img src="https://img.shields.io/badge/mariadb-ffffff?style=for-the-badge&logo=mariadb&logoColor=173654">
+> <img src="https://img.shields.io/badge/springboot-dedede?style=for-the-badge&logo=springboot&logoColor=25c43d">
+> ,<img src="https://img.shields.io/badge/mariadb-dedede?style=for-the-badge&logo=mariadb&logoColor=173654">
 > ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/f3abdca5-1c7a-4a2b-920a-5f46be11cce9" width="50px" height="30px">
 >
 > 
