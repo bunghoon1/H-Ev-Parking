@@ -1,5 +1,6 @@
 # * 풀스택 개발자 포트폴리오*
-김 병 훈 - ByungHoon Kim 포트폴리오
+김 병 훈 - ByungHoon Kim 포트폴리오  <br/>
+Email: bunghoon1@naver.com
 
 <br/>
 
@@ -37,7 +38,8 @@
 
 
 ## 📚 사용 기술
-
+>
+>
 > **Front-End** <br/>
 > <img src="https://img.shields.io/badge/javascript-dedede?style=for-the-badge&logo=javascript&logoColor=fff305">
 > ,<img src="https://img.shields.io/badge/css3-dedede?style=for-the-badge&logo=css3&logoColor=blue">
@@ -45,10 +47,11 @@
 > ,<img src="https://img.shields.io/badge/jquery-dedede?style=for-the-badge&logo=jquery&logoColor=black">
 > ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/e279b1ad-a3ab-4951-b759-455e47960d56" width="50px" height="30px">
 >
-> <br/>
+> **프레임 워크** <br/>
+> <img src="https://img.shields.io/badge/springboot-dedede?style=for-the-badge&logo=springboot&logoColor=25c43d">
+>
 >
 > **Back-End** <br/>
-> <img src="https://img.shields.io/badge/springboot-dedede?style=for-the-badge&logo=springboot&logoColor=25c43d">
 > ,<img src="https://img.shields.io/badge/mariadb-dedede?style=for-the-badge&logo=mariadb&logoColor=173654">
 > ,<img src="https://img.shields.io/badge/Gradle-dedede?style=for-the-badge&logo=Gradle&logoColor=292c47">
 > ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/f7fd55f7-542f-401c-b5bd-2bb41874e6b4" width="50px" height="30px">
@@ -77,7 +80,9 @@
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/index.css"><Strong>css코드 확인</Strong></a>
 > 
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/2c98e34a-109a-403c-a8f8-670ba3332da1">
-> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="50%" height="50%"/></a>
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="50%" height="50%"/></a><br/>
+> 화면에 배치하는것과 CSS를 다루는게 어려웠지만 꾸준히 정보를 찾아보고 배치한 결과가 잘 나와 뿌듯하였습니다.
+> 
 
 <br/><br/><br/><br/>
 
