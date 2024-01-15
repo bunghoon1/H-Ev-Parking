@@ -81,9 +81,11 @@ Email: bunghoon1@naver.com
 > 
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/2c98e34a-109a-403c-a8f8-670ba3332da1">
 > <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/4d906c48-517f-4618-b9ae-d200795a573b" width="50%" height="50%"/></a><br/>
-> 화면에 배치하는것과 CSS를 다루는게 어려웠지만 꾸준히 정보를 찾아보고 배치한 결과가 잘 나와 뿌듯하였습니다.
-> 
-
+- 로그인 후 보여지는 화면
+- 내정보, 주차예약, 주차정보확인, 충전소 조회, 공지사항 이동
+- 주차정보 확인시 예약 취소 및 남은시간 확인
+ 
+## 
 <br/><br/><br/><br/>
 
 ### **🚘2. 주차 예약 및 충전기 사용 예약**
@@ -92,7 +94,15 @@ Email: bunghoon1@naver.com
 > 
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/398c73da-03a4-4006-8ca4-f968be7fc814">
 > <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/5f11113d-d2c4-4a10-afca-87c12bb83494" width="50%" height="50%"/></a>
+>
+- 전기차와 일반차 주차구역 분류
+- 일반주차 기능
+- 정기주차 기능(30일)
+- 충전기 정보확인 및 충전 예약 기능
+- 주차시작일 + 시간 , 주차종료일 + 시간 선택시 요금 자동 계산(실시간 확인가능)
+- 예약중복방지 기능
 
+## 
 <br/><br/><br/><br/>
 
 ### **⌨3. 결제(카드결제/계좌이체)**
@@ -100,8 +110,13 @@ Email: bunghoon1@naver.com
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/parkingResPayment.css"><Strong>css코드 확인</Strong></a>
 > 
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/a496db5b-8b4a-47bb-b03c-2a79d53c460b">
-> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/03928a6a-1cb3-4273-a5f5-321ea323cb8f" width="50%" height="50%"/></a>
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/03928a6a-1cb3-4273-a5f5-321ea323cb8f" width="50%" height="50%"/></a><br/>
+- 주차정보 및 충전기 사용 정보 제공
+- 카드 결제 및 계좌이체 결제
+- 결제 카드 등록
+- 쿠폰사용(미구현)
 
+## 
 <br/><br/><br/><br/>
 
 ### **⛽4. 전기차 충전소 조회**
@@ -109,8 +124,13 @@ Email: bunghoon1@naver.com
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/searchMap.css"><Strong>css코드 확인</Strong></a>
 > 
 > <a href="https://clipchamp.com/watch/IHgpXTF23Qv">
-> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/68811358-c9d9-41ef-a09c-e3f2ca8f3202" width="50%" height="50%"/></a>
+> <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/68811358-c9d9-41ef-a09c-e3f2ca8f3202" width="50%" height="50%"/></a><br/>
+- 주소 검색(키워드), 지역선택으로 이동가능
+- 해당 위치의 주변 충전소 키워드로 검색가능
+- 충전소 리스트 확인 가능
+- 아이콘 클릭시 해당 충전소 정보 확인 가능(실시간 kW당 요금확인 가능)
 
+## 
 <br/><br/><br/><br/>
 
 ## **🎬 시연 영상**
@@ -136,3 +156,5 @@ Email: bunghoon1@naver.com
 ### CSS: 10% -> 60%
 ### SQL: 20% -> 50%
 ### Gradle: 10% -> 20%
+
+## 
