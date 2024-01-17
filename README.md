@@ -47,15 +47,15 @@ Email: bunghoon1@naver.com
 > ,<img src="https://img.shields.io/badge/jquery-dedede?style=for-the-badge&logo=jquery&logoColor=black">
 > ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/e279b1ad-a3ab-4951-b759-455e47960d56" width="50px" height="30px">
 >
-> **프레임 워크** <br/>
-> <img src="https://img.shields.io/badge/springboot-dedede?style=for-the-badge&logo=springboot&logoColor=25c43d">
->
 >
 > **Back-End** <br/>
 > ,<img src="https://img.shields.io/badge/mariadb-dedede?style=for-the-badge&logo=mariadb&logoColor=173654">
 > ,<img src="https://img.shields.io/badge/Gradle-dedede?style=for-the-badge&logo=Gradle&logoColor=292c47">
 > ,<img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/f7fd55f7-542f-401c-b5bd-2bb41874e6b4" width="50px" height="30px">
+> <br/>
 >
+> **프레임 워크** <br/>
+> <img src="https://img.shields.io/badge/springboot-dedede?style=for-the-badge&logo=springboot&logoColor=25c43d">
 > <br/>
 > 
 > **API 및 기타** 
