@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>충전소 검색</title>
 
 <!-- CSS폴더 경로 -->
 <link rel="stylesheet" href="css/searchMap.css">
