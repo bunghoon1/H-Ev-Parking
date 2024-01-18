@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>주차 관리</title>
+    <title>예약 결제</title>
   	
   	<!-- CSS폴더 경로 -->
 	<link rel="stylesheet" href="css/parkingResPayment.css">
