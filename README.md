@@ -134,7 +134,7 @@ Email: bunghoon1@naver.com
 > <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/webapp/WEB-INF/views/searchMap.jsp"><Strong>jsp코드 확인</Strong></a>
 > , <a href="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/blob/main/hevparking/src/main/resources/static/css/searchMap.css"><Strong>css코드 확인</Strong></a>
 > 
-> <a href="https://youtu.be/h4nd7SKBPcQ">
+> <a href="https://youtu.be/A2o2hcqQen8">
 > <img src="https://github.com/bunghoon1/H-Ev_Parking_Web_portfolio/assets/111756786/68811358-c9d9-41ef-a09c-e3f2ca8f3202" width="50%" height="50%"/></a><br/>
 - 주소 검색(키워드), 지역선택으로 이동가능
 - 해당 위치의 주변 충전소 키워드로 검색가능
